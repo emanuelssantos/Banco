@@ -15,9 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 
@@ -42,15 +40,17 @@ public class TelaLoginController implements Initializable {
 
     @FXML
     private void Cadastrar(ActionEvent cadastrar) throws IOException {
+        System.out.println("Cadastar");
         
+        /*
         Parent root = FXMLLoader.load(getClass().getResource("TelaCadastro.fxml"));
-        //StackPane sp = new StackPane();
         Scene scene = new Scene(root);
-        
         Stage pagCadastrar = new Stage();
         
         pagCadastrar.setScene(scene);
         pagCadastrar.show();
+        */
+
     }
 
     @FXML
