@@ -8,11 +8,11 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Banco.jar" size="4066" download="eager" />
+    <jar href="Banco.jar" size="5545" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Banco" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="banco.Banco"  name="Banco" />
+  <jfx:javafx-desc  width="800" height="600" main-class="startPage.Login"  name="Banco" />
   <update check="always"/>
 </jnlp>

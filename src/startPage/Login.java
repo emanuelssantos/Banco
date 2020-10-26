@@ -1,4 +1,4 @@
-package banco;
+package startPage;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,20 +6,24 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 /**
  *
  * @author emanuel
  */
-public class Banco extends Application {
+public class Login extends Application {
+    static Stage stage;
+    
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("TelaLogin.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/TelaLogin.fxml"));
         
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
         stage.show();
+        setStage(stage);
     }
 
     /**
@@ -29,4 +33,15 @@ public class Banco extends Application {
         launch(args);
     }
     
+    /**
+     *
+     * @return 
+     */
+    public static Stage getStage() {
+        return stage;
+    }
+    
+    public static void setStage(Stage stage) {
+        Login.stage = stage;
+    }
 }
