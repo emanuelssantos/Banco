@@ -16,8 +16,14 @@ Tela de Login Criada, mas ainda não finalizada.
     O erro se encontra nessa linha, Procuro uma formar alternativa.
 
 
-2* DIA  -----   DIA 26/10/2020
+2* DIA  -----   DIA 25/10/2020
 
 Consegui solucionar o problema anterior estou começando a organizar mais o código
 
-* Proxima tarafe é conseguir criar os usuários e futuramente salvar em um Bando de Dados SQL.
+* Proxima tarefa: conseguir criar os usuários e futuramente salvar em um Bando de Dados SQL.
+
+3* DIA -----    DIA 26/10/2020
+
+Usuario sendo Cadastrado pela PagCadastro e sendo gravado no BD;
+
+* Proxima tarefa: Efeutar Login pegando os dados do usuario;
