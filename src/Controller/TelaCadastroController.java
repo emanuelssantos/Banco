@@ -5,8 +5,11 @@
  */
 package Controller;
 
+import Classes.Users;
+import DAO.UserDAO;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -20,18 +23,26 @@ import javafx.scene.control.TextField;
 public class TelaCadastroController implements Initializable {
 
     @FXML
-    private Button btCriar;
+    private Button btnCriar;
     @FXML
     private TextField txtUsuario;
     @FXML
     private TextField txtSenha;
 
-    /**
-     * Initializes the controller class.
-     */
+    @FXML
+    public void Criar(ActionEvent criar){
+        Users user = new Users();
+        user.setUsuario(txtUsuario.getText());
+        user.setSenha(txtSenha.getText());
+        
+        UserDAO dao = new UserDAO();
+        dao.add(user);
+    }
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
     }    
     
 }
